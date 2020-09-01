@@ -41,13 +41,14 @@ header h1{
     font-size: 2.5em;
     text-align: center;
     border-bottom: 3px solid #77a466;
+
 }
 header h1 span{
     color: #77a466;
 }
 nav {
+      padding: 46px 0;
 
-      width: 100%;
       text-align: center:
       }
 
@@ -101,25 +102,20 @@ main{
 
 .menu{
   text-align: center;
-  border-top: 1px solid #eee;
-  padding: 0;
+
 }
 .reviews{
-  border-top: 1px solid #eee;
-
   padding: 10px 30px;
 }
 .contact{
-  border-top: 1px solid #eee;
-  padding: 10px 30px;
-  
+
   text-align: center;
 }
 
 .menu li{
   color: #77a466;
   list-style: none;
-  padding: 10px 0;
+
 }
 .menu h3{
   padding: 10px 0;
@@ -145,4 +141,63 @@ footer h2 span{
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.8em;
+}
+
+
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+    header h1{
+      border-bottom: .13em solid #77a466;
+      width: 100%;
+    }
+    .menu, .reviews, .contact {
+      width: 30%;
+    }
+}
+
+
+
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  width: 100%;
+}
+
+header h1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: none;
+  font-size: 3em;
+  width: 35%;
+}
+
+nav{
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+nav ul {
+display: flex;
+
+}
+nav ul li{
+  display: flex;
+  margin: 10px;
+}
+
+.bottom-section{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
 }
